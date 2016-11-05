@@ -27,13 +27,18 @@ module.exports = function (config) {
             noInfo: true
         },
 
-        reporters: ['progress'],
+        reporters: ['mocha'],
+
+        mochaReporter: {
+            output: 'noFailures'
+        },
+
         port: 9876,
         colors: true,
-        logLevel: config.LOG_INFO,
-        autoWatch: false,
+        logLevel: config.LOG_ERROR,
+        autoWatch: true,
         browsers: ['PhantomJS'],
-        singleRun: true
+        singleRun: false
     };
 
     config.set(_config);
