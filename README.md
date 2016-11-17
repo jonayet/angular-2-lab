@@ -1,2 +1,1 @@
-# m-studio
-A music studio for making fun.
+# angular-2-lab
